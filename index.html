@@ -18,7 +18,7 @@
 <body>
   <!-- Header -->
   <header>
-    <img src="images\company_images\company-logo.png" alt="Company Logo" height="64vw">
+    <img src="images\company_images\company-logo.png" alt="Logo společnosti">
     <nav>
       <ul class="header-menu">
         <li class="header-menu-item"><a href="#">Domů</a></li>
@@ -31,21 +31,20 @@
     </nav>
     <div class="language-switch">
       <button onclick="switchLanguage('en')">
-        <img src="images/english_flag.png" alt="Britain flag">
+        <img src="images/english_flag.png" alt="English language">
       </button>
       <button onclick="switchLanguage('cz')">
-        <img src="images/czech_flag.png" alt="Czech flag">
+        <img src="images/czech_flag.png" alt="Český jazyk">
       </button>
     </div>
   </header>
 
   <main>
-
     <!-- About Us -->
     <section id="about">
       <h1>O nás</h1>
       <div class="company-container">
-        <div class="company-building"></div>
+        <img src="images/company_images/building.png" alt="Firemní budova">
         <div class="company-text">
           <p>Jsme středně velká společnost se sídlem v Hradci Králové, která se specializuje na prodej a servis
             exoskeletů.
@@ -67,14 +66,15 @@
       </div>
     </section>
 
+
     <!-- Product -->
     <section id="services">
       <h1>Služby</h1>
       <!-- Section 1 -->
-      <div class="section-container">
-        <div class="exoskeleton-background-1">
-          <h1 style="padding-left: 1.5rem; width: 25%;">Prodej průmyslových exoskeletů</h1>
+      <div class="services-container">
+        <div class="overlay-1">
           <div class="text-section-1">
+            <h2>Prodej průmyslových exoskeletů</h2>
             <p>Naše společnost nabízí širokou škálu průmyslových exoskeletů, které jsou navrženy tak, aby zlepšovaly
               fyzické schopnosti uživatelů v průmyslovém prostředí. Naše produkty jsou vysoce kvalitní, odolné a
               přizpůsobené potřebám moderního průmyslu.</p>
@@ -84,10 +84,10 @@
       </div>
 
       <!-- Section 2 -->
-      <div class="section-container">
-        <div class="exoskeleton-background-2">
-          <h1 style="padding-right: 1.5rem;">Školení a podpora</h1>
+      <div class="services-container">
+        <div class="overlay-2">
           <div class="text-section-2">
+            <h2>Školení a podpora</h2>
             <p>Kromě prodeje exoskeletů nabízíme také školení a podporu pro naše zákazníky. Naše školení jsou navržena
               tak, aby uživatelům pomohla plně využít potenciál našich produktů a pracovat s nimi bezpečně a efektivně.
             </p>
@@ -97,10 +97,10 @@
       </div>
 
       <!-- Section 3 -->
-      <div class="section-container">
-        <div class="exoskeleton-background-3">
-          <h1 style="padding-left: 1.5rem; width: 25%;">Servis a údržba</h1>
+      <div class="services-container">
+        <div class="overlay-3">
           <div class="text-section-3">
+            <h2>Servis a údržba</h2>
             <p>Poskytujeme také servis a údržbu pro všechny naše produkty. Naši odborníci jsou vždy připraveni
               poskytnout rychlý a efektivní servis, aby vaše exoskelety byly vždy v&nbsp;nejlepším možném stavu.</p>
           </div>
@@ -109,26 +109,26 @@
       </div>
     </section>
 
+
     <!-- Gallery -->
     <!-- This section is forced to this webpage because it was in the assignment, but with some js it ended up looking kinda nice-->
     <section id="gallery">
       <h1>Galerie</h1>
       <div class="gallery">
-        <a href="#" class="prev"><img src="images\triangle_left.png"></a>
+        <a href="#" class="prev"><img src="images\triangle_left.png" alt="šipka doleva"></a>
         <div class="gallery-image-container">
-          <img src="images\company_images\product_image_1.png" alt="Product image" class="active">
-          <img src="images\company_images\product_image_2.png" alt="Product image">
-          <img src="images\company_images\product_image_3.png" alt="Product image">
+          <img src="images\company_images\product_image_1.png" alt="Fotografie produktu 1" class="active">
+          <img src="images\company_images\product_image_2.png" alt="Fotografie produktu 2">
+          <img src="images\company_images\product_image_3.png" alt="Fotografie produktu 3">
         </div>
-        <a href="#" class="next"><img src="images\triangle_right.png"></a>
+        <a href="#" class="next"><img src="images\triangle_right.png" alt="šipka doprava"></a>
       </div>
       <div class="thumbnail-container">
-        <img src="images\company_images\product_image_1.png" alt="Product image" class="thumbnail active">
-        <img src="images\company_images\product_image_2.png" alt="Product image" class="thumbnail">
-        <img src="images\company_images\product_image_3.png" alt="Product image" class="thumbnail">
+        <img src="images\company_images\product_image_1.png" alt="Fotografie produktu 1" class="thumbnail active">
+        <img src="images\company_images\product_image_2.png" alt="Fotografie produktu 2" class="thumbnail">
+        <img src="images\company_images\product_image_3.png" alt="Fotografie produktu 3" class="thumbnail">
       </div>
     </section>
-
 
 
     <!-- Partners -->
@@ -170,7 +170,7 @@
       <div class="contact-section">
         <div class="contact-info">
           <h2>Kontaktní informace</h2>
-          <img src="images\company_images\salesman.png" alt="Jan Novak profile picture">
+          <img src="images\company_images\salesman.png" alt="Fotografie Jana Nováka">
           <p><strong>Jan Novák</strong></p>
           <p>jednatel</p>
           <p><strong>email:</strong> <a href="mailto:jan.novak@xpend.cz">jan.novak@xpend.cz</a></p>
@@ -195,23 +195,22 @@
     </section>
   </main>
 
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2023 X-Pend. Všechna práva vyhrazena.</p>
-    <div>
+    <div class="disclaimer">
       <p><b style="color: red;">STUDENTSKÝ ZÁPOČTOVÝ PROJEKT</b></p>
-      <p>S převážně dobrou náladou udělal Martin Šteidler, 22h</p>
+      <p>S převážně dobrou náladou udělal Martin Šteidler, 23h</p>
     </div>
     <div>
       <div class="social-media-links">
         <a href="https://www.facebook.com/"><img src="images\social_media_logos\Facebook_Logo_Secondary.png"
-            alt="Facebook logo" height="50rem"></a>
-        <a href="https://www.twitter.com/"><img src="images\social_media_logos\x-logo-white.png" alt="X logo"
-            height="50rem"></a>
+            alt="Facebook logo"></a>
+        <a href="https://www.twitter.com/"><img src="images\social_media_logos\x-logo-white.png" alt="X logo"></a>
         <a href="https://www.instagram.com/"><img src="images\social_media_logos\Instagram_Glyph_White.png"
-            alt="Instagram logo" height="50rem"></a>
-        <a href="https://www.youtube.com/"><img src="images\social_media_logos\yt_logo_mono_dark.png" alt="YouTube logo"
-            height="50rem"></a>
+            alt="Instagram logo"></a>
+        <a href="https://www.youtube.com/"><img src="images\social_media_logos\yt_logo_mono_dark.png" alt="YouTube logo"></a>
       </div>
     </div>
   </footer>
